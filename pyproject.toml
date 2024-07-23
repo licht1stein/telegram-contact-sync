@@ -24,3 +24,14 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/telegram_contact_sync"]
+
+
+[tool.box]
+builder = "rye"
+is_gui = false
+app_entry = "telegram_contact_sync:run"
+entry_type = "spec"
+python_version = "3.12"
+
+[project.scripts]
+telegram-contact-sync = "telegram_contact_sync:run"
