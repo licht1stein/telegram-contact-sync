@@ -1,0 +1,26 @@
+[project]
+name = "telegram-contact-sync"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "licht1stein", email = "mb@m1k.pw" }
+]
+dependencies = [
+    "telethon>=1.36.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/telegram_contact_sync"]
