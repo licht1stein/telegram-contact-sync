@@ -6,7 +6,7 @@ authors = [
     { name = "licht1stein", email = "mb@m1k.pw" }
 ]
 dependencies = [
-    "telethon>=1.36.0",
+    "telethon==1.36.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
